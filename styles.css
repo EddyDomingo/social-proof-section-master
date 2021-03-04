@@ -24,17 +24,8 @@
 
 }
 
-/*===============
- Media Quieres
- ===============*/
 
 
-@media only screen and (max-width:620px) {
-    /* For mobile phones: */
-    .row, .column, .flex-container {
-      width:100%;
-    }
-  }
 
 /*===============
  Layout & Components
@@ -81,9 +72,7 @@ body{
     border-radius: 5px;
     margin-top: 500px;
     margin-right: 40px;
-    position: relative;
-   
-    
+    position: relative;  
 }
 
 .main-card:nth-child(1){
@@ -233,3 +222,23 @@ body{
     color: var(--white);
     font-size: 15px;
  }
+
+ /*===============
+ Media Queries
+ ===============*/
+
+ @media screen and (max-width:620px) {
+    /* For mobile phones: */
+    .row, .column, .flex-container, .review-card, .main-card, .bgTop {
+      width:100%;
+      flex-direction: column;
+    }
+    .main-card{
+        margin-top: 0%;
+        position: static;
+        margin-top: 50px;
+        margin-left: 200px;
+        width: 100%;
+    }
+    
+  }
